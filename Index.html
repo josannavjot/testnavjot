@@ -15,7 +15,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Josan</a>
+        <a class="navbar-brand" href="#">josan786</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,11 +23,11 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/Home.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="/About.html">About</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -43,7 +43,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Contect.html">Contect</a>
+                    <a class="nav-link" href="Contect.html">Contect</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -51,7 +51,92 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
+        <div class="mx-2">
+            <button class="btn btn-danger" data-toggle="modal" data-target="#LoginModal">Login</button>
+            <button class="btn btn-danger" data-toggle="modal" data-target="#SignModal">Sign Up</button>
+        </div>
     </nav>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login to Josan</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sign Modal -->
+    <div class="modal fade" id="SignModal" tabindex="-1" aria-labelledby="SignModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignModalLabel">Get a josan Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group">
+                                <label for="cexampleInputPassword1">ConfirmPassword</label>
+                                <input type="Confirmpassword" class="form-control" id="cexampleInputPassword1">
+                            </div>
+                        </form>
+
+                        <button type="submit" class="btn btn-primary">Creat Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -60,7 +145,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/Avengers/avenger2/1.jpg" class="d-block w-100" alt="...">
+                <img src="Avengers/avenger2/1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Wellcome to Josan</h2>
                     <p>Tech , Web Devlopment , Coding </p>
@@ -70,7 +155,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="avenger2/2.jpg" class="d-block w-100" alt="...">
+                <img src="Avengers/avenger2/2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>knows</h2>
                     <p>Tech , Web Devlopment , Coding </p>
@@ -80,7 +165,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="avenger2/3.jpg" class="d-block w-100" alt="...">
+                <img src="Avengers/avenger2/3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>You want to best </h2>
                     <p>Tech , Web Devlopment , Coding </p>
@@ -103,61 +188,72 @@
     <div class="container my-4">
         <div class="row mb-2">
             <div class="col-md-6">
-              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-primary">World</strong>
-                  <h3 class="mb-0">Future post</h3>
-                  <div class="mb-1 text-muted">oct 21</div>
-                  <p class="card-text mb-auto">We have lot of thing. now we make the changing life.</p>
-                  
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0">Future post</h3>
+                        <div class="mb-1 text-muted">oct 21</div>
+                        <p class="card-text mb-auto">We have lot of thing. now we make the changing life.</p>
+
+                    </div>
+                    <img src="Avengers/avenger2/5.jpg" alt="">
                 </div>
-                <img src="avenger2/5.jpg" alt="">
-              </div>
             </div>
             <div class="col-md-6">
-              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-success">Design</strong>
-                  <h3 class="mb-0">Tech</h3>
-                  <div class="mb-1 text-muted">oct 22</div>
-                  <p class="mb-auto">This is a awosam blog with supporting roll by author below as a  additional content.</p>
-                  
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Design</strong>
+                        <h3 class="mb-0">Tech</h3>
+                        <div class="mb-1 text-muted">oct 22</div>
+                        <p class="mb-auto">This is a awosam blog with supporting roll by author below as a additional
+                            content.</p>
+
+                    </div>
+                    <img src="Avengers/avenger2/6.jpg" alt="">
                 </div>
-               <img src="avenger2/6.jpg" alt="">
-              </div>
             </div>
-          </div>
+        </div>
     </div>
-    
+
 
     <div class="container my-4">
         <div class="row mb-2">
             <div class="col-md-6">
-              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-primary">World</strong>
-                  <h3 class="mb-0">Excullusive post</h3>
-                  <div class="mb-1 text-muted">oct 21</div>
-                  <p class="card-text mb-auto">We have lot of thing. now we make the changing life.</p>
-                  
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0">Excullusive post</h3>
+                        <div class="mb-1 text-muted">oct 21</div>
+                        <p class="card-text mb-auto">We have lot of thing. now we make the changing life.</p>
+
+                    </div>
+                    <img src="Avengers/avenger2/7.jpg" alt="">
                 </div>
-                <img src="avenger2/7.jpg">
-              </div>
             </div>
             <div class="col-md-6">
-              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-success">Design</strong>
-                  <h3 class="mb-0">Mack</h3>
-                  <div class="mb-1 text-muted">oct 22</div>
-                  <p class="mb-auto">This is a awosam blog with supporting roll by author below as a  additional content.</p>
-                  
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Design</strong>
+                        <h3 class="mb-0">Mack</h3>
+                        <div class="mb-1 text-muted">oct 22</div>
+                        <p class="mb-auto">This is a awosam blog with supporting roll by author below as a additional
+                            content.</p>
+
+                    </div>
+                    <img src="Avengers/avenger2/8.jpg" alt="">
                 </div>
-               <img src="avenger2/8.jpg" alt="">
-              </div>
             </div>
-          </div>
+        </div>
     </div>
+
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2019-2020 Josan Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
